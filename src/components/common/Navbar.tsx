@@ -115,19 +115,18 @@ const Navbar = () => {
                                 width={48}
                                 height={48}
                             /> */}
-              <Logo className="h-10 w-10 text-black transition-all duration-300 ease-in-out md:h-12 md:w-12 dark:text-white" />
+              <Logo className="h-10 w-10 text-black transition-all duration-300 ease-in-out md:h-10 md:w-10 dark:text-white" />
             </div>
           </Link>
         </div>
         <div className="flex items-center">
           <div>
-            <ul className="flex gap-3 p-2 pr-0 md:p-4">
+            <ul className="flex gap-1 p-2 pr-0 md:p-1">
               <li className="transition-ease gap-4">
                 {navItems.map((items, idx) => (
                   <Link
-                    className={`relative px-2 py-1 font-mono text-sm font-medium hover:text-yellow-500 ${
-                      usePathname() === items.href ? "text-yellow-500" : ""
-                    }`}
+                    className={`relative px-2 py-1 font-mono md:text-[12px] text-sm font-medium hover:text-yellow-500 ${usePathname() === items.href ? "text-yellow-500" : ""
+                      }`}
                     href={items.href}
                     key={idx}
                     onMouseEnter={() => setHoverd(idx)}

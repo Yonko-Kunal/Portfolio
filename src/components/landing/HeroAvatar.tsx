@@ -17,7 +17,7 @@ export default function HeroAvatar({ avatar }: HeroAvatarProps) {
   return (
     <Image
       className={cn(
-        "ring-offset-background absolute z-11 flex size-24 translate-x-5 translate-y-15 rounded-full bg-white ring-offset-2 md:size-30 md:translate-x-6 md:translate-y-43",
+        "ring-offset-background absolute z-11 flex size-24 translate-x-5 translate-y-15 rounded-full bg-white ring-offset-2 xl:size-25 2xl:size-30 md:size-20 md:translate-x-6 2xl:translate-y-43 xl:translate-y-30 md:translate-y-35",
         data?.isPlaying && "ring-3 ring-[#1DB954]",
       )}
       src={avatar}

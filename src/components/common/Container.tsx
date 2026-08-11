@@ -10,7 +10,7 @@ const Container = forwardRef<HTMLDivElement, ContainerProps>(
     return (
       <div
         ref={ref}
-        className={`animate-fade-in-blur container mx-auto max-w-196 px-1 py-0 ${className}`}
+        className={`animate-fade-in-blur container mx-auto max-w-196 md:max-w-155 px-1 py-0 ${className}`}
         {...props}
       >
         {children}

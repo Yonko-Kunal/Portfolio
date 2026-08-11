@@ -37,7 +37,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
               <h3
                 className={cn(
                   "text-xl font-bold",
-                  experience.isBlur ? "blur-[5px]" : "blur-none",
+                  experience.isBlur ? "blur-[5px] select-none pointer-events-none" : "blur-none",
                 )}
               >
                 {experience.company}

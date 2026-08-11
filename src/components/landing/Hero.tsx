@@ -39,15 +39,15 @@ export default function Hero() {
         {/* avatar */}
         <div>
           <HeroAvatar avatar={avatar} />
-          <IndianFlag className="absolute top-0 z-30 size-8 translate-x-2 translate-y-15 md:size-10 md:translate-x-2 md:translate-y-45" />
-          <div className="absolute top-0 z-30 translate-x-22 translate-y-28 md:translate-x-28 md:translate-y-62">
+          <IndianFlag className="absolute top-0 z-30 size-8 translate-x-2 translate-y-15 2xl:size-10 xl:size-8 md:size-8 2xl:translate-x-2 xl:translate-x-3 md:translate-x-3 2xl:translate-y-45 xl:translate-y-33 md:translate-y-36" />
+          <div className="absolute top-0 z-30 translate-x-22 translate-y-28 2xl:translate-x-28 xl:translate-x-23 md:translate-x-25 2xl:translate-y-62 xl:translate-y-45 md:translate-y-50">
             <Spotify />
           </div>
         </div>
 
         {/* banner */}
 
-        <div className="dottedBackground mb-12 h-[130px] object-cover md:h-[250px]">
+        <div className="dottedBackground mb-12 h-[130px] object-cover 2xl:h-[250px] xl:h-[180px] md:h-[200px]">
           <Tilt rotationFactor={5} isRevese>
             <div className="overlay-1 absolute inset-0 z-10"></div>
             <Image
@@ -56,16 +56,16 @@ export default function Hero() {
               height={400}
               width={1200}
               placeholder="blur"
-              className="mb-12 h-[130px] object-cover md:h-[250px]"
+              className="mb-12 h-[130px] object-cover 2xl:h-[250px] xl:h-[180px] md:h-[200px]"
             />
           </Tilt>
         </div>
       </div>
 
       <div className="mt-12 flex flex-col gap-8 md:mt-16">
-        <div className="flex flex-col items-start gap-2 md:gap-3">
+        <div className="flex flex-col items-start gap-2 xl:gap-1 md:gap-3">
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl leading-tight font-bold md:text-3xl">
+            <h1 className="text-2xl leading-tight font-bold md:text-xl xl:text-[24px] 2xl:text-3xl">
               {name}
             </h1>
             <BlueTick />
@@ -74,7 +74,7 @@ export default function Hero() {
             {heroConfig.title.map((title, index) => (
               <span
                 key={index}
-                className="text-secondary font-mono text-sm leading-relaxed"
+                className="text-secondary font-mono 2xl:text-sm xl:text-[12px] text-sm leading-relaxed"
               >
                 {title}
               </span>
